@@ -6,38 +6,87 @@ html, body {
 }
 
 #main-container {
-	display: grid;
-	grid-template-columns: 30% 40% 30%;
 	min-height: 100vh;
-}
-
-#left-sidebar {
-}
-
-#right-sidebar {
+	padding: 0 25%;
 }
 
 #center-column {
+	overflow: visible;
+	width: 100%;
+	height: 100%;
 	background-color: #0002;
+	padding: 3% 5% 2em 5%;
 	text-align: center;
 }
 
 #introduction {
-	margin: 5%;
+	border-bottom: 1px dashed black;
 	text-align: left;
+	padding-bottom: 1em;
+}
+
+#introduction ul ul {
+	padding-left: 1em;
+}
+
+#projects-introduction {
+	margin-top: 1em;
 }
 
 #projects {
+	justify-content: center;
 	display: grid;
-	margin: 2%;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 2%;
-	row-gap: 2%;
+	margin-top: 2%;
+	padding: 0 5%;
+	grid-template-columns: repeat(auto-fit, 15em);
+	grid-auto-rows: 20em;
+	column-gap: 3em;
+	row-gap: 3em;
 }
 
 .project {
-	height: 15em;
-	text-align: center;
 	background-color: #0002;
+	background-size: contain;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-bg {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.project .title {
+	font-size: 1.3em;
+}
+
+.project .description {
+	text-align: justify;
+	margin-top: 2em;
+	padding: 0 1.5em;
+}
+
+.project .technologies {
+	margin-top: 1em;
+}
+
+.project .technologies ul {
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	padding-left: 1em;
+}
+
+.project .padding {
+	visibility: hidden;
+}
+
+@media all and (orientation: portrait) {
+	#main-container {
+		padding: 0%;
+	}
 }
 
