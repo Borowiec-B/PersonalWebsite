@@ -97,5 +97,9 @@ html, body {
 	#main-container {
 		padding: 0%;
 	}
+	
+	.non-existent {
+		display: none;
+	}
 }
 
