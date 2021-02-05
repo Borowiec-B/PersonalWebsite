@@ -95,7 +95,7 @@ html, body {
 
 @media all and (orientation: portrait) {
 	#main-container {
-		padding: 0%;
+		padding: 0;
 	}
 	
 	.non-existent {
