@@ -97,7 +97,9 @@ html, body {
 	#main-container {
 		padding: 0;
 	}
-	
+}
+
+@media screen and (max-width: 768px) {
 	.non-existent {
 		display: none;
 	}
