@@ -11,18 +11,17 @@ html, body {
 }
 
 #center-column {
-	overflow: visible;
+	background-color: #0002;
 	width: 100%;
 	height: 100%;
-	background-color: #0002;
 	padding: 3% 5% 2em 5%;
 	text-align: center;
 }
 
 #introduction {
 	border-bottom: 1px dashed black;
-	text-align: left;
 	padding-bottom: 1em;
+	text-align: left;
 }
 
 #introduction ul ul {
@@ -34,25 +33,25 @@ html, body {
 }
 
 #projects {
-	justify-content: center;
 	display: grid;
-	margin-top: 2%;
-	padding: 0 5%;
-	grid-template-columns: repeat(auto-fit, 15em);
-	grid-auto-rows: 20em;
 	column-gap: 3em;
 	row-gap: 3em;
+	grid-template-columns: repeat(auto-fit, 15em);
+	grid-auto-rows: 20em;
+	justify-content: center;
+
+	margin-top: 2%;
+	padding: 0 5%;
 }
 
 .project {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-flow: column wrap;
 
 	background-color: #0002;
 	box-shadow: 1px 1px 5px black;
-	justify-content: center;
-	align-items: center;
-
 	color: black;
 	text-decoration: none;
 }
@@ -98,6 +97,11 @@ html, body {
 	grid-auto-rows: max-content;
 }
 
+#contact-grid a {
+	text-decoration: none;
+	color: black;
+}
+
 #contact-grid img {
 	width: 2em;
 	height: 2em;
@@ -108,11 +112,6 @@ html, body {
 	align-items: center;
 	text-align: left;
 	margin-left: 1em;
-}
-
-#contact-grid a {
-	text-decoration: none;
-	color: black;
 }
 
 @media all and (orientation: portrait) {
