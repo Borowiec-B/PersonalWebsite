@@ -93,6 +93,35 @@ html, body {
 	visibility: hidden;
 }
 
+#contact-section {
+	margin-top: 3%;
+	border-top: 1px dashed black;
+	text-align: center;
+}
+
+#contact-grid {
+	display: inline-grid;
+	grid-template-columns: max-content max-content;
+	grid-auto-rows: max-content;
+}
+
+#contact-grid img {
+	width: 2em;
+	height: 2em;
+}
+
+.contact {
+	display: inline-flex;
+	align-items: center;
+	text-align: left;
+	margin-left: 1em;
+}
+
+#contact-grid a {
+	text-decoration: none;
+	color: black;
+}
+
 @media all and (orientation: portrait) {
 	#main-container {
 		padding: 0;
